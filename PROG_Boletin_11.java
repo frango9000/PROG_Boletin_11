@@ -19,13 +19,13 @@ public class PROG_Boletin_11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-        String frase = "frase-frase";
+        String frase = "frase frase";
         String texto = "";
         System.out.println("ESCRIBE A SEGUINTE FRASE : \n" +frase);
         long startTime = System.currentTimeMillis();
 
         while(!frase.equals(texto)){
-            texto = scan.next();
+            texto = scan.nextLine();
         }
         
         long endTime   = System.currentTimeMillis();
