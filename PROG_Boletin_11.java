@@ -19,11 +19,14 @@ public class PROG_Boletin_11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-        System.out.println("ESCRIBE A SEGUINTE FRASE : \n" +
-                                "A documentación é todo aquel conxunto de manuais impresos ou en formato dixital que explique unha aplicación informática .");
+        String frase = "frase-frase";
+        String texto = "";
+        System.out.println("ESCRIBE A SEGUINTE FRASE : \n" +frase);
         long startTime = System.currentTimeMillis();
 
-        String text = scan.next();
+        while(!frase.equals(texto)){
+            texto = scan.next();
+        }
         
         long endTime   = System.currentTimeMillis();
         
