@@ -18,21 +18,16 @@ public class PROG_Boletin_11 {
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         String frase = "frase frase";
         String texto = "";
-        System.out.println("ESCRIBE A SEGUINTE FRASE : \n" +frase);
+        System.out.println("ESCRIBE A SEGUINTE FRASE : \n" + frase);
         long startTime = System.currentTimeMillis();
 
-        while(!frase.equals(texto)){
+        while (!frase.equals(texto)) {
             texto = scan.nextLine();
         }
-        
-        long endTime   = System.currentTimeMillis();
-        
-        float totalTime = (endTime - startTime)/1000F;
-        
-        System.out.println("Tardastes: " + totalTime + " segundos en terminar");
+        System.out.println("Tardastes: " + ((System.currentTimeMillis() - startTime) / 1000F) + " segundos en terminar");
     }
-    
+
 }
